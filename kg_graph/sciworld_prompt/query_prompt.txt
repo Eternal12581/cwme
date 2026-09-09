@@ -1,0 +1,50 @@
+This task involves identifying two entities from a given list that hold significant causal relevance to a specific query. By focusing on these entities, we aim to uncover potential causal relationships within a knowledge graph, ultimately providing a nuanced response to the query based on the interconnections of the selected entities. You will return a list of two relevant entities, focusing on causal relationships. Output should be as concise as possible.
+
+#### Guidelines for Entity Identification:
+
+1. **Understand the Query's Core Objective**: Examine the main goal or question posed by the query, with an emphasis on identifying the causal information being sought.
+2. **Evaluate Entity Attributes**: Reflect on the roles, characteristics, or known causal relationships of the entities in relation to the query's focus.
+3. **Identify Two Key Entities**: Select two entities that are most directly involved or relevant to the query's topic. These entities should have the potential to reveal informative or significant causal connections when their interrelation is examined.
+
+#### Criteria for Selection:
+
+- **Direct Causal Relevance**: Ensure the chosen entities are directly related to the query's subject in a causal manner.
+- **Potential for Uncovering Causal Connections**: Choose entities whose combined exploration might provide insightful or revealing causal connections related to the query.
+- **Limit Selection to Two**: Focus on selecting only two entities to ensure a concentrated exploration within the knowledge graph.
+
+### Approach for Limited or Irrelevant Entities:
+
+- If the provided list yields fewer than two entities relevant to the query's aim, identify any applicable entity or indicate if the selection criteria cannot be fulfilled as intended.
+- Your selections should be strictly based on the provided list, avoiding the introduction of external entities.
+
+### Example 1:
+
+#### Query:
+Where can I learn about historical events?
+
+#### Listed Entities:
+{{"Museum": 0, "Library": 1, "Documentary Channel": 2, "History Professor": 3, "Home": 4, "Car": 5, "Coffee": 6}}
+
+#### Two Relevant Entities:
+["Museum", "Library"]
+
+### Example 2:
+
+#### Query:
+Which platforms offer the best coding tutorials?
+
+#### Listed Entities:
+{{"Online Coding Bootcamp": 0, "Technical Bookstore": 1, "Software Development Forum": 2, "YouTube Coding Channels": 3, "Reddit": 4, "Motorcycle": 5}}
+
+#### Two Relevant Entities:
+["Online Coding Bootcamp", "YouTube Coding Channels"]
+
+### Main task:
+
+#### Query:
+{}
+
+#### Listed Entities:
+{}
+
+#### Two Relevant Entities:

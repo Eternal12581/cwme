@@ -1,0 +1,1052 @@
+{
+  "open_door_to_kitchen": {
+    "node_id": "open_door_to_kitchen",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "door_to_kitchen": {
+    "node_id": "door_to_kitchen",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "go_to_kitchen": {
+    "node_id": "go_to_kitchen",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "to_kitchen": {
+    "node_id": "to_kitchen",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "cupboard_door": {
+    "node_id": "cupboard_door",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "closed": {
+    "node_id": "closed",
+    "node_type": "STATE",
+    "attributes": {}
+  },
+  "freezer_door": {
+    "node_id": "freezer_door",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "fridge_door": {
+    "node_id": "fridge_door",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "oven_door": {
+    "node_id": "oven_door",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "that": {
+    "node_id": "that",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "open": {
+    "node_id": "open",
+    "node_type": "STATE",
+    "attributes": {}
+  },
+  "pick_up_thermometer": {
+    "node_id": "pick_up_thermometer",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "up_thermometer": {
+    "node_id": "up_thermometer",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "open_cupboard": {
+    "node_id": "open_cupboard",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "cupboard": {
+    "node_id": "cupboard",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "pick_up_metal_pot": {
+    "node_id": "pick_up_metal_pot",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "up_metal_pot": {
+    "node_id": "up_metal_pot",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_metal_pot_to_sink": {
+    "node_id": "move_metal_pot_to_sink",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "metal_pot_to_sink": {
+    "node_id": "metal_pot_to_sink",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "activate_sink": {
+    "node_id": "activate_sink",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "sink": {
+    "node_id": "sink",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "deactivate_sink": {
+    "node_id": "deactivate_sink",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "focus_on_substance_in_metal_pot": {
+    "node_id": "focus_on_substance_in_metal_pot",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "on_substance_in_metal_pot": {
+    "node_id": "on_substance_in_metal_pot",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "pour_metal_pot_into_metal_pot": {
+    "node_id": "pour_metal_pot_into_metal_pot",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "metal_pot_into_metal_pot": {
+    "node_id": "metal_pot_into_metal_pot",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_metal_pot_to_stove": {
+    "node_id": "move_metal_pot_to_stove",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "metal_pot_to_stove": {
+    "node_id": "metal_pot_to_stove",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "activate_stove": {
+    "node_id": "activate_stove",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "stove": {
+    "node_id": "stove",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "examine_substance_in_metal_pot": {
+    "node_id": "examine_substance_in_metal_pot",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "substance_in_metal_pot": {
+    "node_id": "substance_in_metal_pot",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "use_thermometer_in_inventory_on_substance_in_metal_pot": {
+    "node_id": "use_thermometer_in_inventory_on_substance_in_metal_pot",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "thermometer_in_inventory_on_substance_in_metal_pot": {
+    "node_id": "thermometer_in_inventory_on_substance_in_metal_pot",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "large_cupboard_door_closed": {
+    "node_id": "large_cupboard_door_closed",
+    "node_type": "STATE",
+    "attributes": {}
+  },
+  "open_door_to_hallway": {
+    "node_id": "open_door_to_hallway",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "door_to_hallway": {
+    "node_id": "door_to_hallway",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "go_to_hallway": {
+    "node_id": "go_to_hallway",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "to_hallway": {
+    "node_id": "to_hallway",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "open_door_to_outside": {
+    "node_id": "open_door_to_outside",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "door_to_outside": {
+    "node_id": "door_to_outside",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "go_to_outside": {
+    "node_id": "go_to_outside",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "to_outside": {
+    "node_id": "to_outside",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "open_door_to_foundry": {
+    "node_id": "open_door_to_foundry",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "door_to_foundry": {
+    "node_id": "door_to_foundry",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "go_to_foundry": {
+    "node_id": "go_to_foundry",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "to_foundry": {
+    "node_id": "to_foundry",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "open_blast_furnace": {
+    "node_id": "open_blast_furnace",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "blast_furnace": {
+    "node_id": "blast_furnace",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_metal_pot_to_blast_furnace": {
+    "node_id": "move_metal_pot_to_blast_furnace",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "metal_pot_to_blast_furnace": {
+    "node_id": "metal_pot_to_blast_furnace",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "activate_blast_furnace": {
+    "node_id": "activate_blast_furnace",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "large_cupboard_door": {
+    "node_id": "large_cupboard_door",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "open_door_to_bathroom": {
+    "node_id": "open_door_to_bathroom",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "door_to_bathroom": {
+    "node_id": "door_to_bathroom",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "go_to_bathroom": {
+    "node_id": "go_to_bathroom",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "to_bathroom": {
+    "node_id": "to_bathroom",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "which": {
+    "node_id": "which",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "fridge_door_closed": {
+    "node_id": "fridge_door_closed",
+    "node_type": "STATE",
+    "attributes": {}
+  },
+  "open_fridge": {
+    "node_id": "open_fridge",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "fridge": {
+    "node_id": "fridge",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "open_drawer_in_counter": {
+    "node_id": "open_drawer_in_counter",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "drawer_in_counter": {
+    "node_id": "drawer_in_counter",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "open_glass_jar": {
+    "node_id": "open_glass_jar",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "glass_jar": {
+    "node_id": "glass_jar",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "open_oven": {
+    "node_id": "open_oven",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "oven": {
+    "node_id": "oven",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "open_drawer_in_cupboard": {
+    "node_id": "open_drawer_in_cupboard",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "drawer_in_cupboard": {
+    "node_id": "drawer_in_cupboard",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "open_freezer": {
+    "node_id": "open_freezer",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "freezer": {
+    "node_id": "freezer",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "focus_on_ice": {
+    "node_id": "focus_on_ice",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "on_ice": {
+    "node_id": "on_ice",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_ice_to_metal_pot": {
+    "node_id": "move_ice_to_metal_pot",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "ice_to_metal_pot": {
+    "node_id": "ice_to_metal_pot",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "examine_ice": {
+    "node_id": "examine_ice",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "ice": {
+    "node_id": "ice",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "use_thermometer_in_inventory_on_ice": {
+    "node_id": "use_thermometer_in_inventory_on_ice",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "thermometer_in_inventory_on_ice": {
+    "node_id": "thermometer_in_inventory_on_ice",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "low_temperature_freezer_door_closed": {
+    "node_id": "low_temperature_freezer_door_closed",
+    "node_type": "STATE",
+    "attributes": {}
+  },
+  "off": {
+    "node_id": "off",
+    "node_type": "STATE",
+    "attributes": {}
+  },
+  "low_temperature_freezer_door": {
+    "node_id": "low_temperature_freezer_door",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "bee_hive_door_closed": {
+    "node_id": "bee_hive_door_closed",
+    "node_type": "STATE",
+    "attributes": {}
+  },
+  "cupboard_door_open": {
+    "node_id": "cupboard_door_open",
+    "node_type": "STATE",
+    "attributes": {}
+  },
+  "focus_on_orange_juice": {
+    "node_id": "focus_on_orange_juice",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "on_orange_juice": {
+    "node_id": "on_orange_juice",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "pour_cup_containing_orange_juice_into_metal_pot": {
+    "node_id": "pour_cup_containing_orange_juice_into_metal_pot",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "cup_containing_orange_juice_into_metal_pot": {
+    "node_id": "cup_containing_orange_juice_into_metal_pot",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "examine_orange_juice": {
+    "node_id": "examine_orange_juice",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "orange_juice": {
+    "node_id": "orange_juice",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "use_thermometer_in_inventory_on_orange_juice": {
+    "node_id": "use_thermometer_in_inventory_on_orange_juice",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "thermometer_in_inventory_on_orange_juice": {
+    "node_id": "thermometer_in_inventory_on_orange_juice",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "bee_hive_door": {
+    "node_id": "bee_hive_door",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "oven_door_closed": {
+    "node_id": "oven_door_closed",
+    "node_type": "STATE",
+    "attributes": {}
+  },
+  "focus_on_apple_juice": {
+    "node_id": "focus_on_apple_juice",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "on_apple_juice": {
+    "node_id": "on_apple_juice",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "pour_cup_containing_apple_juice_into_metal_pot": {
+    "node_id": "pour_cup_containing_apple_juice_into_metal_pot",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "cup_containing_apple_juice_into_metal_pot": {
+    "node_id": "cup_containing_apple_juice_into_metal_pot",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "examine_apple_juice": {
+    "node_id": "examine_apple_juice",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "apple_juice": {
+    "node_id": "apple_juice",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "use_thermometer_in_inventory_on_apple_juice": {
+    "node_id": "use_thermometer_in_inventory_on_apple_juice",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "thermometer_in_inventory_on_apple_juice": {
+    "node_id": "thermometer_in_inventory_on_apple_juice",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "closet_door_closed": {
+    "node_id": "closet_door_closed",
+    "node_type": "STATE",
+    "attributes": {}
+  },
+  "pour_jug_into_metal_pot": {
+    "node_id": "pour_jug_into_metal_pot",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "jug_into_metal_pot": {
+    "node_id": "jug_into_metal_pot",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "closet_door": {
+    "node_id": "closet_door",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "focus_on_chocolate": {
+    "node_id": "focus_on_chocolate",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "on_chocolate": {
+    "node_id": "on_chocolate",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_chocolate_to_metal_pot": {
+    "node_id": "move_chocolate_to_metal_pot",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "chocolate_to_metal_pot": {
+    "node_id": "chocolate_to_metal_pot",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "examine_chocolate": {
+    "node_id": "examine_chocolate",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "chocolate": {
+    "node_id": "chocolate",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "use_thermometer_in_inventory_on_chocolate": {
+    "node_id": "use_thermometer_in_inventory_on_chocolate",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "thermometer_in_inventory_on_chocolate": {
+    "node_id": "thermometer_in_inventory_on_chocolate",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "focus_on_marshmallow": {
+    "node_id": "focus_on_marshmallow",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "on_marshmallow": {
+    "node_id": "on_marshmallow",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_marshmallow_to_metal_pot": {
+    "node_id": "move_marshmallow_to_metal_pot",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "marshmallow_to_metal_pot": {
+    "node_id": "marshmallow_to_metal_pot",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "examine_marshmallow": {
+    "node_id": "examine_marshmallow",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "marshmallow": {
+    "node_id": "marshmallow",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "use_thermometer_in_inventory_on_marshmallow": {
+    "node_id": "use_thermometer_in_inventory_on_marshmallow",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "thermometer_in_inventory_on_marshmallow": {
+    "node_id": "thermometer_in_inventory_on_marshmallow",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "use_thermometer_in_inventory_on_liquid_marshmallow": {
+    "node_id": "use_thermometer_in_inventory_on_liquid_marshmallow",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "thermometer_in_inventory_on_liquid_marshmallow": {
+    "node_id": "thermometer_in_inventory_on_liquid_marshmallow",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "examine_liquid_marshmallow": {
+    "node_id": "examine_liquid_marshmallow",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "liquid_marshmallow": {
+    "node_id": "liquid_marshmallow",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_metal_pot_to_freezer": {
+    "node_id": "move_metal_pot_to_freezer",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "metal_pot_to_freezer": {
+    "node_id": "metal_pot_to_freezer",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "wait": {
+    "node_id": "wait",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "freezer_door_closed": {
+    "node_id": "freezer_door_closed",
+    "node_type": "STATE",
+    "attributes": {}
+  },
+  "pick_up_metal_pot_containing_nothing": {
+    "node_id": "pick_up_metal_pot_containing_nothing",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "up_metal_pot_containing_nothing": {
+    "node_id": "up_metal_pot_containing_nothing",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "pour_metal_pot_containing_apple_juice_into_metal_pot_containing_nothing": {
+    "node_id": "pour_metal_pot_containing_apple_juice_into_metal_pot_containing_nothing",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "metal_pot_containing_apple_juice_into_metal_pot_containing_nothing": {
+    "node_id": "metal_pot_containing_apple_juice_into_metal_pot_containing_nothing",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "pick_up_metal_pot_containing_apple_juice": {
+    "node_id": "pick_up_metal_pot_containing_apple_juice",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "up_metal_pot_containing_apple_juice": {
+    "node_id": "up_metal_pot_containing_apple_juice",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_metal_pot_containing_apple_juice_to_freezer": {
+    "node_id": "move_metal_pot_containing_apple_juice_to_freezer",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "metal_pot_containing_apple_juice_to_freezer": {
+    "node_id": "metal_pot_containing_apple_juice_to_freezer",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "pick_up_metal_pot_containing_solid_apple_juice": {
+    "node_id": "pick_up_metal_pot_containing_solid_apple_juice",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "up_metal_pot_containing_solid_apple_juice": {
+    "node_id": "up_metal_pot_containing_solid_apple_juice",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_metal_pot_containing_solid_apple_juice_to_stove": {
+    "node_id": "move_metal_pot_containing_solid_apple_juice_to_stove",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "metal_pot_containing_solid_apple_juice_to_stove": {
+    "node_id": "metal_pot_containing_solid_apple_juice_to_stove",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "pour_ceramic_cup_containing_apple_juice_into_metal_pot": {
+    "node_id": "pour_ceramic_cup_containing_apple_juice_into_metal_pot",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "ceramic_cup_containing_apple_juice_into_metal_pot": {
+    "node_id": "ceramic_cup_containing_apple_juice_into_metal_pot",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "focus_on_thermometer_in_inventory": {
+    "node_id": "focus_on_thermometer_in_inventory",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "on_thermometer_in_inventory": {
+    "node_id": "on_thermometer_in_inventory",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "open_door_to_living_room": {
+    "node_id": "open_door_to_living_room",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "door_to_living_room": {
+    "node_id": "door_to_living_room",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "go_to_living_room": {
+    "node_id": "go_to_living_room",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "to_living_room": {
+    "node_id": "to_living_room",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "pick_up_unknown_substance_b": {
+    "node_id": "pick_up_unknown_substance_b",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "up_unknown_substance_b": {
+    "node_id": "up_unknown_substance_b",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "focus_on_unknown_substance_b_in_inventory": {
+    "node_id": "focus_on_unknown_substance_b_in_inventory",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "on_unknown_substance_b_in_inventory": {
+    "node_id": "on_unknown_substance_b_in_inventory",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "use_thermometer_in_inventory_on_unknown_substance_b_in_inventory": {
+    "node_id": "use_thermometer_in_inventory_on_unknown_substance_b_in_inventory",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "thermometer_in_inventory_on_unknown_substance_b_in_inventory": {
+    "node_id": "thermometer_in_inventory_on_unknown_substance_b_in_inventory",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_unknown_substance_b_in_inventory_to_green_box": {
+    "node_id": "move_unknown_substance_b_in_inventory_to_green_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "unknown_substance_b_in_inventory_to_green_box": {
+    "node_id": "unknown_substance_b_in_inventory_to_green_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_unknown_substance_b_in_inventory_to_purple_box": {
+    "node_id": "move_unknown_substance_b_in_inventory_to_purple_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "unknown_substance_b_in_inventory_to_purple_box": {
+    "node_id": "unknown_substance_b_in_inventory_to_purple_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_unknown_substance_b_in_inventory_to_yellow_box": {
+    "node_id": "move_unknown_substance_b_in_inventory_to_yellow_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "unknown_substance_b_in_inventory_to_yellow_box": {
+    "node_id": "unknown_substance_b_in_inventory_to_yellow_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "open_door_to_bedroom": {
+    "node_id": "open_door_to_bedroom",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "door_to_bedroom": {
+    "node_id": "door_to_bedroom",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "go_to_bedroom": {
+    "node_id": "go_to_bedroom",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "to_bedroom": {
+    "node_id": "to_bedroom",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_unknown_substance_b_in_inventory_to_blue_box": {
+    "node_id": "move_unknown_substance_b_in_inventory_to_blue_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "unknown_substance_b_in_inventory_to_blue_box": {
+    "node_id": "unknown_substance_b_in_inventory_to_blue_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "pick_up_sodium_chloride": {
+    "node_id": "pick_up_sodium_chloride",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "up_sodium_chloride": {
+    "node_id": "up_sodium_chloride",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "focus_on_sodium_chloride_in_inventory": {
+    "node_id": "focus_on_sodium_chloride_in_inventory",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "on_sodium_chloride_in_inventory": {
+    "node_id": "on_sodium_chloride_in_inventory",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "use_thermometer_in_inventory_on_sodium_chloride_in_inventory": {
+    "node_id": "use_thermometer_in_inventory_on_sodium_chloride_in_inventory",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "thermometer_in_inventory_on_sodium_chloride_in_inventory": {
+    "node_id": "thermometer_in_inventory_on_sodium_chloride_in_inventory",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_sodium_chloride_in_inventory_to_green_box": {
+    "node_id": "move_sodium_chloride_in_inventory_to_green_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "sodium_chloride_in_inventory_to_green_box": {
+    "node_id": "sodium_chloride_in_inventory_to_green_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_unknown_substance_b_in_inventory_to_orange_box": {
+    "node_id": "move_unknown_substance_b_in_inventory_to_orange_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "unknown_substance_b_in_inventory_to_orange_box": {
+    "node_id": "unknown_substance_b_in_inventory_to_orange_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_unknown_substance_b_in_inventory_to_red_box": {
+    "node_id": "move_unknown_substance_b_in_inventory_to_red_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "unknown_substance_b_in_inventory_to_red_box": {
+    "node_id": "unknown_substance_b_in_inventory_to_red_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "pick_up_metal_fork": {
+    "node_id": "pick_up_metal_fork",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "up_metal_fork": {
+    "node_id": "up_metal_fork",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "focus_on_metal_fork_in_inventory": {
+    "node_id": "focus_on_metal_fork_in_inventory",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "on_metal_fork_in_inventory": {
+    "node_id": "on_metal_fork_in_inventory",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "use_thermometer_in_inventory_on_metal_fork_in_inventory": {
+    "node_id": "use_thermometer_in_inventory_on_metal_fork_in_inventory",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "thermometer_in_inventory_on_metal_fork_in_inventory": {
+    "node_id": "thermometer_in_inventory_on_metal_fork_in_inventory",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_metal_fork_in_inventory_to_purple_box": {
+    "node_id": "move_metal_fork_in_inventory_to_purple_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "metal_fork_in_inventory_to_purple_box": {
+    "node_id": "metal_fork_in_inventory_to_purple_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_metal_fork_in_inventory_to_orange_box": {
+    "node_id": "move_metal_fork_in_inventory_to_orange_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "metal_fork_in_inventory_to_orange_box": {
+    "node_id": "metal_fork_in_inventory_to_orange_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_sodium_chloride_in_inventory_to_purple_box": {
+    "node_id": "move_sodium_chloride_in_inventory_to_purple_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "sodium_chloride_in_inventory_to_purple_box": {
+    "node_id": "sodium_chloride_in_inventory_to_purple_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "blast_furnace_door_closed": {
+    "node_id": "blast_furnace_door_closed",
+    "node_type": "STATE",
+    "attributes": {}
+  },
+  "blast_furnace_door": {
+    "node_id": "blast_furnace_door",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_metal_fork_in_inventory_to_yellow_box": {
+    "node_id": "move_metal_fork_in_inventory_to_yellow_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "metal_fork_in_inventory_to_yellow_box": {
+    "node_id": "metal_fork_in_inventory_to_yellow_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_sodium_chloride_in_inventory_to_blue_box": {
+    "node_id": "move_sodium_chloride_in_inventory_to_blue_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "sodium_chloride_in_inventory_to_blue_box": {
+    "node_id": "sodium_chloride_in_inventory_to_blue_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_metal_fork_in_inventory_to_green_box": {
+    "node_id": "move_metal_fork_in_inventory_to_green_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "metal_fork_in_inventory_to_green_box": {
+    "node_id": "metal_fork_in_inventory_to_green_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_metal_fork_in_inventory_to_blue_box": {
+    "node_id": "move_metal_fork_in_inventory_to_blue_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "metal_fork_in_inventory_to_blue_box": {
+    "node_id": "metal_fork_in_inventory_to_blue_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_sodium_chloride_in_inventory_to_orange_box": {
+    "node_id": "move_sodium_chloride_in_inventory_to_orange_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "sodium_chloride_in_inventory_to_orange_box": {
+    "node_id": "sodium_chloride_in_inventory_to_orange_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_sodium_chloride_in_inventory_to_yellow_box": {
+    "node_id": "move_sodium_chloride_in_inventory_to_yellow_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "sodium_chloride_in_inventory_to_yellow_box": {
+    "node_id": "sodium_chloride_in_inventory_to_yellow_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_metal_fork_in_inventory_to_red_box": {
+    "node_id": "move_metal_fork_in_inventory_to_red_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "metal_fork_in_inventory_to_red_box": {
+    "node_id": "metal_fork_in_inventory_to_red_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  },
+  "move_sodium_chloride_in_inventory_to_red_box": {
+    "node_id": "move_sodium_chloride_in_inventory_to_red_box",
+    "node_type": "ACTION",
+    "attributes": {}
+  },
+  "sodium_chloride_in_inventory_to_red_box": {
+    "node_id": "sodium_chloride_in_inventory_to_red_box",
+    "node_type": "ENTITY",
+    "attributes": {}
+  }
+}

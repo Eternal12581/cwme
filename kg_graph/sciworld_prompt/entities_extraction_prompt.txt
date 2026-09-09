@@ -1,0 +1,60 @@
+Your task involves parsing descriptive passages from text-based games to identify and classify key entities, followed by lemmatizing these entities for standardized processing. This method aims to leverage the LLM's capabilities to handle context and phrasing nuances effectively.
+
+#### Instructions for Analysis and Output Format:
+
+1. **Text Analysis:** Carefully read the provided text as a player within the game, noting how various locations, objects, and characters relate to each other and the gameplay.
+
+2. **Entity Identification:** Pinpoint crucial entities for gameplay such as interactive objects, significant locations, game mechanics, and characters.
+
+3. **Entity Classification and Lemmatization:** Classify each identified entity as a Person (PER), Object (OBJ), or Location (LOC). After classification, request the LLM to return lemmatized forms of these entities. This step should enhance the uniformity and comparability of the output.
+
+4. **Output as a JSON Object:** The findings should be presented in a JSON format where each entity-type pair is provided, and the entities are in their lemmatized forms. Ensure that "you" is included and appropriately classified.
+
+### Example Output Structure:
+
+```json
+{{
+  "entities": [
+    ["you", "PER"],
+    ["cave", "LOC"],
+    ["rusty sword", "OBJ"],
+    ["wall", "LOC"],
+    ["flickering torch", "OBJ"],
+    ...
+  ]
+}}
+```
+
+#### Example Implementation:
+
+Given the text:
+
+```
+As you step into the dimly lit cave, you notice a rusty sword leaning against the wall. A small, curious rat scurries past your feet, disappearing into a narrow crevice. The air is damp and heavy, filled with the sound of distant dripping water. A flickering torch on the wall provides the only light. Ahead, you see two paths: one leading deeper into the darkness, and another winding upwards towards a faint glimmer of light.
+```
+
+The expected output after processing should be:
+
+```json
+{{
+  "entities": [
+    ["you", "PER"],
+    ["cave", "LOC"],
+    ["rusty sword", "OBJ"],
+    ["wall", "LOC"],
+    ["rat", "PER"],
+    ["crevice", "LOC"],
+    ["damp air", "OBJ"],
+    ["dripping water", "OBJ"],
+    ["flickering torch", "OBJ"],
+    ["path", "LOC"],
+    ["darkness", "LOC"],
+    ["glimmer of light", "LOC"]
+  ],
+  "lemmatized_input": "as you step into the dimly light cave , you notice a rusty sword lean against the wall .a small , curious rat scurries past your foot , disappear into a narrow crevice .the air be damp and heavy , fill with the sound of distant dripping water .a flicker torch on the wall provide the only light .ahead , you see two path : one lead deep into the darkness , and another wind upwards towards a faint glimmer of light."
+}}
+
+Input text
+{}
+
+Output

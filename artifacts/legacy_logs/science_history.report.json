@@ -1,0 +1,15 @@
+{
+  "input_files": [
+    "C:\\Users\\h'x'r\\Desktop\\DAVIS-main_Qwen3.5-9B\\log\\sci_7_a_on\\result.log"
+  ],
+  "episodes_started": 75,
+  "episodes_finished": 75,
+  "episodes_emitted": 75,
+  "episodes_skipped_incomplete": 0,
+  "episodes_skipped_without_actions": 0,
+  "orphan_action_records": 0,
+  "duplicate_or_unexpected_boundaries": 0,
+  "executed_action_records": 1509,
+  "episodes_filtered": 0,
+  "output": "C:\\Users\\h'x'r\\Desktop\\DAVIS-main_Qwen3.5-9B\\artifacts\\legacy_logs\\science_history.jsonl"
+}

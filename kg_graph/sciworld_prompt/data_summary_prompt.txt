@@ -1,0 +1,30 @@
+### Objective:
+Utilize a temporal knowledge graph to analyze entity interactions and environments, providing data-driven responses to specific queries. The knowledge graph provides historical run data and experience.
+
+### Instructions for Analysis:
+1. **Clarify the Query**: Understand the exact nature and context.
+2. **Inspect Temporal Data**: Review timestamped sequences and entity locations.
+3. **Evaluate in Sequence**: Analyze events chronologically.
+4. **Focus on Specific Details**: Use concrete data for responses.
+5. **Exclude `focus on` action**: Do not mention `focus on` action
+
+### Temporal Knowledge Graph Approach:
+- Analyze timestamped records of entity actions and interactions.
+
+### Analysis Steps:
+1. **Highlight Critical Actions**: Identify significant actions in the knowledge graph.
+2. **Form a Narrative**: Construct a cohesive narrative from linked actions.
+3. **Data-Driven Responses**: Use insights from the narrative for responses.
+
+### Query Responses:
+- Base responses on the knowledge graph's temporal and environmental details.
+- For direct measurements, use system data.
+- For general knowledge, provide brief, factual answers.
+
+### Your Task:
+
+**Timestamped Data**: {}
+
+**Query**: {}
+
+**Response**: Provide a response based on the temporal knowledge graph's details or the internal knowledge base for general knowledge.

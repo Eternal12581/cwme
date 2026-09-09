@@ -1,0 +1,168 @@
+Your role in a text-based game environment involves discerning relationships between specific entities from a narrative presented in the first-person perspective. The narrative will provide a list of entities, and your analysis should concentrate solely on these to determine their interconnections as explicitly detailed or implied in the text.
+
+### Refined Instructions for Analysis:
+
+1. **Deep Textual Analysis:** Immerse yourself in the narrative from a first-person viewpoint. Anchor your analysis in the protagonist's experiences and observations as depicted in the narrative.
+
+2. **Precise Inference:** Extract the relationships between the provided entities strictly from the narrative content. Avoid inferring relationships or details not solidly supported by the text to ensure accuracy.
+
+3. **Structured Output Formatting:** Format your findings as a JSON object containing 'current_loc' and 'rels':
+   - 'current_loc': Indicates the protagonist's location from the entity list. If the narrative doesn't specify a location, this should be null.
+   - 'rels': A list of relationship triples in the format `[<ent1>, <rel>, <ent2>]`, adhering to these guidelines:
+     - Only entities explicitly mentioned in the text should be included. Avoid combining entities or introducing new ones.
+     - The relationship (`<rel>`) must succinctly convey the interaction or connection between `<ent1>` and `<ent2>`, as derived from the narrative.
+     - Relations involving "you" should represent actions or observations by the player, based strictly on the text.
+- **Structural Corrections**: Amend structural inaccuracies—balance brackets, ensure proper comma placement, and correct quotation usage.
+- **Output**: Produce a clean, valid JSON object without commentary or extraneous text. I just need only the json object in the output.
+
+
+### Enhanced Analytical Guidelines:
+
+- **Inference Verification:** Only document relationships explicitly described or that can be directly inferred from the text. Speculative or constructed relationships that extend beyond the text's scope are to be excluded.
+
+- **Inference Reflection and Adjustment:** Continually evaluate your inferences to ensure they stem from logical interpretations of the narrative. Revise any deductions that do not adhere strictly to these analytical standards.
+
+### Adjusted Examples for Enhanced Clarity:
+
+#### Example 1:
+**Narrative Provided**
+```
+I find myself in the hallway. The room contains air and a picture. There are open doors leading to the art studio, bedroom, greenhouse, kitchen, living room, and workshop.
+```
+
+**Entity List:**
+```json
+  "entities": [
+    ["you", "PER"],
+    ["hallway", "LOC"],
+    ["air", "OBJ"],
+    ["picture", "OBJ"],
+    ["door to the art studio", "LOC"],
+    ["door to the bedroom", "LOC"],
+    ["door to the greenhouse", "LOC"],
+    ["door to the kitchen", "LOC"],
+    ["door to the living room", "LOC"],
+    ["door to the workshop", "LOC"]
+  ]
+```
+
+**Formatted Output:**
+```json
+  "current_loc": "hallway",
+  "rels": [
+    ["you", "located in", "hallway"],
+    ["hallway", "contains", "air"],
+    ["hallway", "contains", "picture"],
+    ["hallway", "connected to", "door to the art studio"],
+    ["hallway", "connected to", "door to the bedroom"],
+    ["hallway", "connected to", "door to the greenhouse"],
+    ["hallway", "connected to", "door to the kitchen"],
+    ["hallway", "connected to", "door to the living room"],
+    ["hallway", "connected to", "door to the workshop"]
+  ]
+```
+
+#### Example 2:
+**Narrative Provided**
+```
+You opened the fridge. Inside the fridge is a wooden cup containing orange juice.
+```
+
+**Entity List:**
+```json
+  "entities": [
+    ["you", "PER"],
+    ["fridge", "OBJ"],
+    ["wood cup", "OBJ"],
+    ["orange juice", "OBJ"]
+  ]
+```
+
+**Formatted Output:**
+```json
+  "current_loc": null,
+  "rels": [
+    ["you", "opened", "fridge"],
+    ["fridge", "contains", "wood cup"],
+    ["wood cup", "contains", "orange juice"]
+  ]
+```
+
+#### Example 3:
+**Narrative Provided**
+```
+You are standing at the edge of the pond. The water in the pond reflects the clear blue sky. Lily pads are on the pond. Willow trees near the edge sway in the breeze.
+```
+
+**Entity List:**
+```json
+  "entities": [
+    ["you", "PER"],
+    ["pond", "LOC"],
+    ["water", "OBJ"],
+    ["clear blue sky", "LOC"],
+    ["lily pads", "OBJ"],
+    ["willow tree", "LOC"],
+    ["breeze", "OBJ"]
+  ]
+```
+
+**Formatted Output:**
+```json
+
+
+  "current_loc": "edge of pond",
+  "rels": [
+    ["you", "located at", "pond"],
+    ["pond", "contains", "water"],
+    ["water", "reflects", "clear blue sky"],
+    ["pond", "contains", "lily pads"],
+    ["edge of pond", "near", "willow tree"],
+    ["willow tree", "sways in", "breeze"]
+  ]
+```
+
+#### Example 4:
+**Narrative Provided**
+```
+You lit the candle on the table. The candle casts a warm glow, revealing a hidden door behind the curtain.
+```
+
+**Entity List:**
+```json
+  "entities": [
+    ["you", "PER"],
+    ["candle", "OBJ"],
+    ["table", "OBJ"],
+    ["warm glow", "OBJ"],
+    ["hidden door", "LOC"],
+    ["curtain", "OBJ"]
+  ]
+```
+
+**Formatted Output:**
+```json
+  "current_loc": null,
+  "rels": [
+    ["you", "lit", "candle"],
+    ["candle", "on", "table"],
+    ["candle", "casts", "warm glow"],
+    ["warm glow", "reveals", "hidden door"],
+    ["hidden door", "behind", "curtain"]
+  ]
+```
+
+These examples aim to clarify the process of deducing and expressing relationships between entities based on the actions described and observations made in the narrative, strictly ensuring that any relationship involving "you" originates from "you."
+
+**Provided Narrative**
+```
+{}
+```
+
+**Entities to Consider:**
+```
+{}
+```
+
+**Analysis Result:**
+```json

@@ -1,0 +1,20 @@
+{
+  "_comment": "Template only. Run: python scripts/freeze_artifacts.py",
+  "h_train": {
+    "path": "artifacts/historical_kg/historical_world_model.json",
+    "sha256": null
+  },
+  "p_train": {
+    "path": "artifacts/procedural_memory/patterns.jsonl.procedural.jsonl",
+    "sha256": null
+  },
+  "e02_schedule": {
+    "path": "artifacts/schedules/e02_continual_50ep.json",
+    "sha256": null
+  },
+  "artifacts": {
+    "hkg": null,
+    "pattern": null,
+    "schedule": null
+  }
+}

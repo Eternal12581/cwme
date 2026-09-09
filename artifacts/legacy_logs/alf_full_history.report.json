@@ -1,0 +1,15 @@
+{
+  "input_files": [
+    "C:\\Users\\h'x'r\\Desktop\\DAVIS-main_Qwen3.5-9B\\log\\alf_7_seen5_f\\result.log"
+  ],
+  "episodes_started": 140,
+  "episodes_finished": 140,
+  "episodes_emitted": 140,
+  "episodes_skipped_incomplete": 0,
+  "episodes_skipped_without_actions": 0,
+  "orphan_action_records": 0,
+  "duplicate_or_unexpected_boundaries": 0,
+  "executed_action_records": 4741,
+  "episodes_filtered": 0,
+  "output": "C:\\Users\\h'x'r\\Desktop\\DAVIS-main_Qwen3.5-9B\\artifacts\\legacy_logs\\alf_full_history.jsonl"
+}

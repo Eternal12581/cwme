@@ -1,0 +1,19 @@
+{
+  "h_train": {
+    "path": "artifacts/historical_kg/historical_world_model.json",
+    "sha256": "sha256:b6e3ac88785fb325948b6fe92c2bffd8ba48aa53b878e258e554beedf85102fe"
+  },
+  "p_train": {
+    "path": "artifacts/procedural_memory/patterns.jsonl.procedural.jsonl",
+    "sha256": "sha256:555d6f7ef4de7d202414def98240b020f73de0df4e2ddd5b9e964ca649e0312a"
+  },
+  "e02_schedule": {
+    "path": "artifacts/schedules/e02_continual_50ep.json",
+    "sha256": "sha256:ff5874476a80322150cc54a235f04bb6d87bbb9d332b1a3634f4721adc847b7f"
+  },
+  "artifacts": {
+    "hkg": "sha256:b6e3ac88785fb325948b6fe92c2bffd8ba48aa53b878e258e554beedf85102fe",
+    "pattern": "sha256:555d6f7ef4de7d202414def98240b020f73de0df4e2ddd5b9e964ca649e0312a",
+    "schedule": "sha256:ff5874476a80322150cc54a235f04bb6d87bbb9d332b1a3634f4721adc847b7f"
+  }
+}
