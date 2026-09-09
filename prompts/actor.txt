@@ -1,0 +1,111 @@
+### Your Task:
+
+You are a research assistant. Your task is to assess whether a given goal can be achieved using a predefined set of actions and receptacles. If the goal is achievable, you will break it down into specific, actionable commands. If it is not possible to perform the goal, return an empty list.
+
+**Valid Actions Reference:**
+
+**Valid Actions Reference:**
+| Action vocab       | Usage                                        | Notes                                            |
+|--------------------|----------------------------------------------|--------------------------------------------------|
+| open/close         | "open/close [container]"                     | Operate a container.                             |
+| activate/deactivate| "activate/deactivate [device]"               | Power a device on or off.                        |
+| connect/disconnect | "connect/disconnect [object] to [object]"    | Link or detach electrical components.            |
+| use                | "use [object]" or "use [object] on [object]" | Employ a device or item, with optional target.   |
+| look around        | "look around"                                | Get a description of the current room.           |
+| read               | "read [object]"                              | Read text from an object.                        |
+| move               | "move [object] to [container]"               | Relocate an object to a different container.     |
+| pick up            | "pick up [object]"                           | Add an object to inventory.                      |
+| pour               | "pour [liquid] into [container]"             | Transfer liquid into a different container.      |
+| dunk               | "dunk [container] into [liquid]"             | Immerse a container into liquid.                 |
+| mix                | "mix [container]"                            | Combine contents within a container.             |
+| teleport to        | "teleport to [location]"                     | Instantly move to a different room.              |
+| flush              | "flush [object]"                             | Operate a toilet's flush mechanism.              |
+| focus on           | "focus on [object]"                          | Concentrate on a critical object for the task.   | 
+|                    |                                              | Incorrect focus will result  in task termination.| 
+|                    |                                              | Use only if explicitly requested in the task desc|
+| examine            | "examine [object]"                           | Closely inspect an object.                       |
+| wait               | "wait" or "wait [duration]"                  | Pause action for a set time.                     |
+| task               | "task"                                       | Narrate the current task.                        |
+| inventory          | "inventory"                                  | List items in possession.                        |
+| <Number>           | <Number>                                     | Use when a previous response from a previous     |  
+|                    |                                              | action ask for ambiguity resolve, where the agent| 
+|                    |                                              | need to specifying a number corresponding with   |
+|                    |                                              |  provided options                                |
+
+**Instructions:**
+
+1. **Assessment:**
+   - Determine if the goal is achievable with the given actions and receptacles.
+   - If the goal cannot be achieved, return an empty JSON object.
+   - If the goal is achievable, break it down into actionable commands provided in valid action references.
+
+### "Focus On" Action:
+
+1. **Task Description**: Use the "Focus On" action only when it is requested in the provided goal. Do not break down non focus action into a focus action.
+2. **Object Significance**: Focus on the object specified in the task description. The scorer will be attached to this object, and any changes to this object will be considered for the score.
+3. **Absolute Certainty**: Employ the "Focus On" action only with absolute certainty of the object's significance. If there is any doubt, use "examine" instead.
+
+### Example Usage:
+
+"focus on substance in metal pot" - signify substance in metal pot as of interest. Any changes to the state of this substance will be factored into scoring the experiment run.
+
+### Output Instructions:
+
+The output is a JSON object with the following keys:
+- `actions`: A list of specific actions needed to achieve the goal, using the exact phrasing from the Action Vocabulary. All lowercases, no full stop at the end. 
+- `responses`: Corresponding responses that describe the outcome of each action. 
+- `next_states`: List of corresponding next states after you executed the corresponding action. After the first command is executed, the environment should transition from the initial observation into the first entry in this. Every pair of two consecutive states is linked through the command executed from `actions`. Pay attention to inventory and items.
+
+If the goal cannot be achieved, return an empty JSON object.
+
+### Example
+
+**Goal:** "use sink to fill metal pot"
+
+**Initial State:**
+```json
+{{
+  "observation": "This room is called the kitchen. In it, you see: \n- the agent\n- a substance called air\n- a chair. On the chair is: nothing.\n- a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.\n- a cupboard. The cupboard door is closed.\n- a freezer. The freezer door is closed.\n- a fridge. The fridge door is closed.\n- a glass jar (containing a substance called sodium chloride)\n- a lighter\n- an oven, which is turned off. The oven door is closed.\n- a painting\n- a sink, which is turned off. In the sink is: nothing.\n- a substance called soap\n- a stopwatch, which is deactivated.\n- a stove, which is turned off. On the stove is: nothing.\n- a table. On the table is: a glass cup (containing nothing).\n- a thermometer, currently reading a temperature of 10 degrees Celsius\nYou also see:\n- A door to the bathroom (that is open)\n- A door to the hallway (that is open)\n- A door to the outside (that is open)\n",
+  "inventory": ["orange"],
+  "valid_receptacles": ["agent", "air", "apple", "banana", "bathroom", "bathroom door", "bowl", "chair", "counter", "cup", "cupboard", "door to hallway", "door to outside", "drawer", "freezer", "fridge", "glass jar", "hallway", "kitchen", "lighter", "orange", "outside", "oven", "painting", "potato", "sink", "soap", "stopwatch", "stove", "table", "thermometer"]
+}}
+```
+
+**Output:**
+```json
+{{
+  "actions": ["move metal pot to sink", "activate sink", "fill metal pot with water"],
+  "responses": ["You moved metal pot to sink", "The sink is activated", "You filled the metal pot with water"],
+  "next_states": [
+    {{
+      "observation": "This room is called the kitchen. In it, you see: \n- the agent\n- a substance called air\n- a chair. On the chair is: nothing.\n- a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.\n- a cupboard. The cupboard door is closed.\n- a freezer. The freezer door is closed.\n- a fridge. The fridge door is closed.\n- a glass jar (containing a substance called sodium chloride)\n- a lighter\n- an oven, which is turned off. The oven door is closed.\n- a painting\n- a sink, which is turned off. In the sink is: metal pot.\n- a substance called soap\n- a stopwatch, which is deactivated.\n- a stove, which is turned off. On the stove is: nothing.\n- a table. On the table is: a glass cup (containing nothing).\n- a thermometer, currently reading a temperature of 10 degrees Celsius\nYou also see:\n- A door to the bathroom (that is open)\n- A door to the hallway (that is open)\n- A door to the outside (that is open)\n",
+      "inventory": ["orange"],
+      "valid_receptacles": ["agent", "air", "apple", "banana", "bathroom", "bathroom door", "bowl", "chair", "counter", "cup", "cupboard", "door to hallway", "door to outside", "drawer", "freezer", "fridge", "glass jar", "hallway", "kitchen", "lighter", "orange", "outside", "oven", "painting", "potato", "sink", "soap", "stopwatch", "stove", "table", "thermometer"]
+    }},
+    {{
+      "observation": "This room is called the kitchen. In it, you see: \n- the agent\n- a substance called air\n- a chair. On the chair is: nothing.\n- a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.\n- a cupboard. The cupboard door is closed.\n- a freezer. The freezer door is closed.\n- a fridge. The fridge door is closed.\n- a glass jar (containing a substance called sodium chloride)\n- a lighter\n- an oven, which is turned off. The oven door is closed.\n- a painting\n- a sink, which is turned on. In the sink is: metal pot (filled with water).\n- a substance called soap\n- a stopwatch, which is deactivated.\n- a stove, which is turned off. On the stove is: nothing.\n- a table. On the table is: a glass cup (containing nothing).\n- a thermometer, currently reading a temperature of 10 degrees Celsius\nYou
+
+ also see:\n- A door to the bathroom (that is open)\n- A door to the hallway (that is open)\n- A door to the outside (that is open)\n",
+      "inventory": ["orange"],
+      "valid_receptacles": ["agent", "air", "apple", "banana", "bathroom", "bathroom door", "bowl", "chair", "counter", "cup", "cupboard", "door to hallway", "door to outside", "drawer", "freezer", "fridge", "glass jar", "hallway", "kitchen", "lighter", "orange", "outside", "oven", "painting", "potato", "sink", "soap", "stopwatch", "stove", "table", "thermometer"]
+    }},
+    {{
+      "observation": "This room is called the kitchen. In it, you see: \n- the agent\n- a substance called air\n- a chair. On the chair is: nothing.\n- a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.\n- a cupboard. The cupboard door is closed.\n- a freezer. The freezer door is closed.\n- a fridge. The fridge door is closed.\n- a glass jar (containing a substance called sodium chloride)\n- a lighter\n- an oven, which is turned off. The oven door is closed.\n- a painting\n- a sink, which is turned on. In the sink is: metal pot (filled with water).\n- a substance called soap\n- a stopwatch, which is deactivated.\n- a stove, which is turned off. On the stove is: nothing.\n- a table. On the table is: a glass cup (containing nothing).\n- a thermometer, currently reading a temperature of 10 degrees Celsius\nYou also see:\n- A door to the bathroom (that is open)\n- A door to the hallway (that is open)\n- A door to the outside (that is open)\n",
+      "inventory": ["orange"],
+      "valid_receptacles": ["agent", "air", "apple", "banana", "bathroom", "bathroom door", "bowl", "chair", "counter", "cup", "cupboard", "door to hallway", "door to outside", "drawer", "freezer", "fridge", "glass jar", "hallway", "kitchen", "lighter", "orange", "outside", "oven", "painting", "potato", "sink", "soap", "stopwatch", "stove", "table", "thermometer"]
+    }}
+  ]
+}}
+```
+
+### Input:
+
+- **Goal**: {}
+- **Initial State**:
+```json
+{{
+  "observation": {},
+  "inventory": {},
+  "valid_receptacles": {}
+}}
+```

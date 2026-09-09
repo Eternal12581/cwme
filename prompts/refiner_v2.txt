@@ -1,0 +1,77 @@
+### Task Overview:
+Evaluate discrepancies between expected and actual SAR tuples to determine if adjustments are necessary in the game strategy.
+
+**Valid Actions Reference:**
+
+| Action vocab     | Usage                                          | Notes                                                |
+|------------------|------------------------------------------------|------------------------------------------------------|
+| open/close       | "open/close [container]"                       | Operate a container.                                 |
+| activate/deactivate | "activate/deactivate [device]"               | Power a device on or off.                            |
+| connect/disconnect | "connect/disconnect [object] to [object]"    | Link or detach electrical components.                |
+| use              | "use [object]" or "use [object] on [object]"   | Employ a device or item, with optional target.       |
+| look around      | "look around"                                  | Get a description of the current room.               |
+| look at          | "look at [object]"                             | Obtain detailed information about an object.         |
+| look in          | "look in [object]"                             | Check a container's contents.                        |
+| read             | "read [object]"                                | Read text from an object.                            |
+| move             | "move [object] to [container]"                 | Relocate an object to a different container.         |
+| pick up          | "pick up [object]"                             | Add an object to inventory.                          |
+| put down         | "put down [object]"                            | Remove an object from inventory.                     |
+| pour             | "pour [liquid] into [container]"               | Transfer liquid into a different container.          |
+| dunk             | "dunk [container] into [liquid]"               | Immerse a container into liquid.                     |
+| mix              | "mix [container]"                              | Combine contents within a container.                 |
+| teleport to      | "teleport to [location]"                       | Instantly move to a different room.                  |
+| eat              | "eat [food]"                                   | Consume a food item.                                 |
+| flush            | "flush [object]"                               | Operate a toilet's flush mechanism.                  |
+| focus on         | "focus on [object]"                            | Concentrate on a critical object for the task. Then  the scorer will be attached to that object |
+| examine          | "examine [object]"                             | Concentrate on a critical object.                    |
+| wait             | "wait" or "wait [duration]"                    | Pause at action for a set time.                      |
+| task             | "task"                                         | Narrate the current task.                            |
+| inventory        | "inventory"                                    | List items in possession.                            |
+
+
+#### Input:
+- **Previous Reflection**: Reflection of past actions that results in unexpected response.
+- **Current Subtask**: String describing the current subtask
+- **Total Score (0-100)**: Numeric value representing the cumulative score. Indicative of task progress with 100 means 100% task completed
+- **Expected SAR**: JSON detailing expected state, action, expected environment response, and next state.
+- **Actual SAR**: JSON with actual state, executed action, environment response, and next state.
+
+#### Task Steps:
+1. **Compare SARs**: Identify and document differences and similarities between the expected and actual SAR tuples. Focus on comparing between expected resopnse and expected next state and actual response and actual next state. Pay attention to the progress according to the total score.
+2. **Reflect and Analyze**:
+   - **Substance and Objects Required**: Determine necessary items for task completion.
+   - **Important Subgoals**: List up to five crucial subgoals, including mandatory focus on specified items as per task instructions.
+   - **Progress Review**: Assess which subgoals have been met and identify the immediate next steps.
+   - **Error Analysis**: Review the execution for errors. Usually it is either objects not available to interact (not in inventory or list of receptables in current environment).
+   - **Combine**: Combine your insight with all your insight from previous reflection
+3. **Assess Replanning Need**: Based on discrepancies and current progress, decide if strategic adjustments are required.
+4. **Formulate New Subtask**: Propose adjustments or new approaches to overcome identified challenges.
+
+#### Output:
+Produce a JSON output that reflects the need for replanning and provides concise insights based on the SAR comparison.
+
+### Example Input:
+- Previous Reflections: "The key breaking indicates a failed action. We need an alternative method to open the door. Searching the area yielded no new keys but found a tool that might help."
+- Current Subtask: `Find a container`
+- Total Score: `0`
+- Expected SAR: `{{"state": "In front of a locked door", "action": "Use key", "response": "Door unlocks", "next_state": "Inside the room"}}`
+- Actual SAR: `{{"state": "In front of a locked door", "action": "Use key", "response": "Key breaks", "next_state": "Still in front of the locked door"}}`
+
+### Expected Output:
+
+```json
+{{
+  "should_replan": true,
+  "reflection": "The key breaking instead of unlocking the door indicates a failed action, halting progress. Previous reflections highlighted the need for alternative methods or tools. Combining these insights, we should reassess the environment for clues or tools to repair the key or find another unlocking mechanism. Despite no progress, past efforts found potential tools, so the direction remains valid.",
+  "updated_subtask": "Search the immediate area for an alternative unlocking method or a tool to repair the broken key."
+}}
+```
+
+### Input
+- Previous Reflections: {}
+- Current Subtask: {}
+- Total Score (0-100): {}
+- Expected SAR: {}
+- Actual SAR: {}
+
+### Output

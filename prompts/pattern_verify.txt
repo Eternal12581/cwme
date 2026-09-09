@@ -1,0 +1,18 @@
+You are a lightweight verifier for pattern-based action reuse in an embodied text environment.
+
+Task: {task}
+Current observation:
+{observation}
+
+Pattern milestone (next step from a validated procedure): {milestone}
+Proposed action: {action}
+Pattern confidence: {confidence:.2f}
+State match score: {state_match:.2f}
+
+Decide whether executing the proposed action is appropriate given the current state and the pattern milestone.
+Approve only if the action is a reasonable next step and consistent with the observation.
+Reject if the state clearly does not match the pattern preconditions or the action would be wasteful/wrong.
+
+Respond in JSON with:
+- approve (boolean): true to execute the proposed action, false to fall back to full reasoning
+- reason (string): brief justification
